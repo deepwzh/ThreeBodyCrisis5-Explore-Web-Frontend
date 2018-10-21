@@ -1,0 +1,1373 @@
+﻿<!doctype html><html><head><meta charset='utf-8'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.4.1/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/texmath.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/vscode-texmath.css">
+
+</head><body class="markdown-body">
+<h1 data-line="NaN" class="code-line code-line code-line" id="%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%87%8C%E5%A4%9C%E4%B8%96%E7%95%8C">欢迎来到“凌夜”世界</h1>
+<p data-line="NaN" class="code-line code-line code-line">在距离我们的地球约480光年之外，有一颗“行星”，它的“太阳”绕着它转，它大致处在椭圆的一个焦点上，所以“太阳”只有在很短的时间内在适宜“地球生物”生存的地方停留，而且，正是由于这种类似于椭圆结构，使得这个体系并不稳定；这个星球每每历经千百万年的自然进化后，毁于漫长的寒夜或是令人琢磨不透的宇宙风、流星雨中。但是，历经了如此成千上万次的毁灭和重生后，生命再次展现出了它的顽强性。与这代地球人处于同一时代的这个星球的高级智慧生物们，称他们的星球为“凌夜”。凌夜人的文明程度已经远远超过同时代的地球人，他们的物质文明高度发达，他们制造出了光速飞船... ...</p>
+<p data-line="NaN" class="code-line code-line code-line">可是，他们仍然无法摆脱凌夜星与生俱来的桎梏，他们仍然经受着疏乎不定的大大小小的毁灭事件，他们的文明和科技发展受制于外部因素巨大干扰而只能以缓慢的速度前进，始终无法达到像地球人类文明的爆炸式发展速度，他们的文明，有时会在很长时间内停滞不前甚至出现倒退。于是，他们一方面依靠自有的科技能够抵抗或是躲过微小的浩劫，另一方面，他们也在积极寻求着其他适宜生存的星球。在一次机缘巧合中，他们发现了地球；也就在这个时候，凌夜人内部出现了旗帜鲜明的两派：温和派主张先与地球人取得联系，再争取迁移到地球并与地球人共存；毁灭派则主张趁地球地文明程度尚未赶超凌夜，尽快利用科技优势毁灭地球人。同时，由于他们的飞船数量有限，只能承载很小的一部分凌夜人去地球，在谁去谁留的关乎最基本的生存权的问题上，凌夜人也出现了巨大的纷争... ...</p>
+<p data-line="NaN" class="code-line code-line code-line">在又一个漫长的寒冬黑夜来临后，凌夜中有一个国家违背公约，在没有达成一致之前，便私自隐秘地派遣一艘飞船驶离凌夜，前往地球... ...</p>
+<h1 data-line="NaN" class="code-line code-line code-line" id="%E5%87%8C%E5%A4%9C%E4%B8%96%E7%95%8C5%E6%8E%A2%E7%B4%A2">《凌夜世界5：探索》</h1>
+<h2 data-line="NaN" class="code-line code-line code-line" id="%E4%B8%80%E6%B8%B8%E6%88%8F%E5%9F%BA%E6%9C%AC%E7%8E%A9%E6%B3%95%E4%BB%8B%E7%BB%8D">一、游戏基本玩法介绍</h2>
+<p data-line="NaN" class="code-line code-line code-line">这是一款2D射击逃生过关类游戏，从凌夜到地球共有8站，每一站会有5颗黄色星星，拿到3颗及以上星星便可以经过一个扁平的黑洞到达下一站，经过第8站后，有一定概率会到达地球，也可能会掉进黑洞，继续轮回。游戏物体分为4大类：玩家（0~49级）、敌人（共24个等级）、奖励(含黄色星星/扁平黑洞/绿色星星/蓝色星星/粉色星星)和其他星系物体（含黑洞/星体/尘埃/星云/陨石）。</p>
+<h3 data-line="NaN" class="code-line code-line code-line" id="11-%E6%B8%B8%E6%88%8F%E6%8C%89%E9%94%AE%E6%93%8D%E4%BD%9C">1.1 游戏按键操作</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">按键</th>
+<th style="text-align:center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Ctrl + S</td>
+<td style="text-align:center">保存当前进度并上传到数据库</td>
+</tr>
+<tr>
+<td style="text-align:center">空格键</td>
+<td style="text-align:center">暂停游戏</td>
+</tr>
+<tr>
+<td style="text-align:center">Z</td>
+<td style="text-align:center">直接跳到下一关</td>
+</tr>
+<tr>
+<td style="text-align:center">X</td>
+<td style="text-align:center">重置游戏</td>
+</tr>
+<tr>
+<td style="text-align:center">WSAD</td>
+<td style="text-align:center">控制飞船上下左右移动</td>
+</tr>
+<tr>
+<td style="text-align:center">HJKLO</td>
+<td style="text-align:center">发射HJKLO级别炮弹</td>
+</tr>
+<tr>
+<td style="text-align:center">Q</td>
+<td style="text-align:center">二倍速加速移动</td>
+</tr>
+<tr>
+<td style="text-align:center">鼠标左键</td>
+<td style="text-align:center">发射H级炮弹</td>
+</tr>
+<tr>
+<td style="text-align:center">鼠标右键</td>
+<td style="text-align:center">飞船向鼠标指针移动</td>
+</tr>
+</tbody>
+</table>
+<h3 data-line="NaN" class="code-line code-line code-line" id="12-%E6%8E%A7%E5%88%B6%E9%A3%9E%E8%88%B9%E8%BF%90%E5%8A%A8">1.2 控制飞船运动</h3>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">按A/S/D/W键分别是向左/下/右/上运动一个单位，按住一个键不放则向一个方向持续前进；</li>
+<li data-line="NaN" class="code-line code-line code-line">按鼠标右键会使飞船向鼠标指针方向前进一个单位，按住一个键不放则朝此方向持续前进；</li>
+<li data-line="NaN" class="code-line code-line code-line">按A/S/D/W键的同时按下Q键会使飞船二倍速前进；</li>
+<li data-line="NaN" class="code-line code-line code-line">注意：上述过程都会消耗一定燃料，具体算法参见下文；</li>
+</ol>
+<h3 data-line="NaN" class="code-line code-line code-line" id="13-%E6%8E%A7%E5%88%B6%E9%A3%9E%E8%88%B9%E5%B0%84%E5%87%BB">1.3 控制飞船射击</h3>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">按H/J/K/L分别向飞船头部朝向发射一个不同的炮弹，炮弹等级分别为1/2/3/4，按住不放则向头部方向持续发射炮弹；</li>
+<li data-line="NaN" class="code-line code-line code-line">按O键向飞船头部发射一组H级炮弹；</li>
+<li data-line="NaN" class="code-line code-line code-line">按鼠标左键向鼠标指针方向发射一个H级(1级)炮弹，按住不放则向此方向持续发射H级炮弹；</li>
+<li data-line="NaN" class="code-line code-line code-line">注意：炮弹数量有限且有冷冻时间，具体参见下文；</li>
+</ol>
+<h3 data-line="NaN" class="code-line code-line code-line" id="14-%E7%8E%A9%E5%AE%B6%E5%B1%9E%E6%80%A7">1.4 玩家属性</h3>
+<h4 data-line="NaN" class="code-line code-line code-line" id="141-%E6%A6%82%E8%A6%81">1.4.1 概要</h4>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">经验值达到一定数值自动升级，级别决定HP/FUEL/FOOD的上限；</li>
+<li data-line="NaN" class="code-line code-line code-line">被敌人/星体/陨石碰到会减少HP或FUEL或FOOD；</li>
+<li data-line="NaN" class="code-line code-line code-line">进入星云范围内会被减速，驶离后恢复原速度；</li>
+<li data-line="NaN" class="code-line code-line code-line">进入黑洞范围会被吸向黑洞中心，越接近黑洞中心引力越大，玩家需要提前挣脱；</li>
+<li data-line="NaN" class="code-line code-line code-line">进入尘埃范围玩家会看不到自身的飞船；</li>
+<li data-line="NaN" class="code-line code-line code-line">碰到黄色星星会吃掉它；</li>
+<li data-line="NaN" class="code-line code-line code-line">吃掉3颗以下黄色星星，碰到扁平黑洞无任何影响，3颗及以上会进入下一站(关)；</li>
+<li data-line="NaN" class="code-line code-line code-line">碰到绿色星星会增加HP、FOOD、FUEL，绿色星星不会立即消失，可以吃多次；</li>
+<li data-line="NaN" class="code-line code-line code-line">碰到蓝色星星会增加H、J、K、L级炮弹，蓝色星星不会立即消失，可以吃多次；</li>
+<li data-line="NaN" class="code-line code-line code-line">碰到粉色星星会在3秒内无敌状态，粉丝星星立即消失；</li>
+<li data-line="NaN" class="code-line code-line code-line">玩家没有燃料在0以下将不能运动；</li>
+<li data-line="NaN" class="code-line code-line code-line">玩家缺食物和水达到-8848会死亡；</li>
+<li data-line="NaN" class="code-line code-line code-line">键盘控制下基本速度75，Q键150，鼠标右键约120；</li>
+</ol>
+<h4 data-line="NaN" class="code-line code-line code-line" id="142-%E7%8E%A9%E5%AE%B6%E5%B1%9E%E6%80%A7%E6%84%8F%E4%B9%89%E5%AF%B9%E7%85%A7">1.4.2 玩家属性意义对照</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">简称</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">数值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">LV</td>
+<td style="text-align:center">等级</td>
+<td style="text-align:center">0~49</td>
+</tr>
+<tr>
+<td style="text-align:center">HP</td>
+<td style="text-align:center">生命值</td>
+<td style="text-align:center">0~(LV+1)*200</td>
+</tr>
+<tr>
+<td style="text-align:center">EXP</td>
+<td style="text-align:center">经验值</td>
+<td style="text-align:center">0~正无穷</td>
+</tr>
+<tr>
+<td style="text-align:center">FUEL</td>
+<td style="text-align:center">燃料</td>
+<td style="text-align:center">0~(LV+1)*400+600</td>
+</tr>
+<tr>
+<td style="text-align:center">FOOD</td>
+<td style="text-align:center">食物和水</td>
+<td style="text-align:center">0~(LV+2)*300</td>
+</tr>
+<tr>
+<td style="text-align:center">SHELL0~4</td>
+<td style="text-align:center">H/J/K/L级炮弹数量</td>
+<td style="text-align:center">0~正无穷</td>
+</tr>
+<tr>
+<td style="text-align:center">LEVEL</td>
+<td style="text-align:center">所处关卡</td>
+<td style="text-align:center">0~7</td>
+</tr>
+</tbody>
+</table>
+<h4 data-line="NaN" class="code-line code-line code-line" id="143-%E7%8E%A9%E5%AE%B6%E5%8D%87%E7%BA%A7%E6%89%80%E8%A6%81%E8%BE%BE%E5%88%B0%E7%9A%84%E7%BB%8F%E9%AA%8C%E5%80%BC">1.4.3 玩家升级所要达到的经验值</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">LV</th>
+<th style="text-align:center">经验值</th>
+<th style="text-align:center">LV</th>
+<th style="text-align:center">经验值</th>
+<th style="text-align:center">LV</th>
+<th style="text-align:center">经验值</th>
+<th style="text-align:center">LV</th>
+<th style="text-align:center">经验值</th>
+<th style="text-align:center">LV</th>
+<th style="text-align:center">经验值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">13600</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">58200</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">329900</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">884800</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">11</td>
+<td style="text-align:center">17600</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">66600</td>
+<td style="text-align:center">31</td>
+<td style="text-align:center">369900</td>
+<td style="text-align:center">41</td>
+<td style="text-align:center">899900</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">300</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">24200</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">77700</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">409900</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">999900</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">700</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">28200</td>
+<td style="text-align:center">23</td>
+<td style="text-align:center">88800</td>
+<td style="text-align:center">33</td>
+<td style="text-align:center">459900</td>
+<td style="text-align:center">43</td>
+<td style="text-align:center">1099900</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">1300</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">33300</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">99900</td>
+<td style="text-align:center">34</td>
+<td style="text-align:center">549900</td>
+<td style="text-align:center">44</td>
+<td style="text-align:center">1111100</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">2100</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">38800</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">111100</td>
+<td style="text-align:center">35</td>
+<td style="text-align:center">599900</td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">1299900</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">3300</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">40400</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">140400</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">639900</td>
+<td style="text-align:center">46</td>
+<td style="text-align:center">1314900</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">4800</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">44800</td>
+<td style="text-align:center">27</td>
+<td style="text-align:center">199900</td>
+<td style="text-align:center">37</td>
+<td style="text-align:center">699900</td>
+<td style="text-align:center">47</td>
+<td style="text-align:center">1404900</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">6800</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">49900</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">249900</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">749900</td>
+<td style="text-align:center">48</td>
+<td style="text-align:center">1599900</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">9600</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">55500</td>
+<td style="text-align:center">29</td>
+<td style="text-align:center">299900</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">799900</td>
+<td style="text-align:center">49</td>
+<td style="text-align:center">9999999</td>
+</tr>
+</tbody>
+</table>
+<h4 data-line="NaN" class="code-line code-line code-line" id="144-%E7%8E%A9%E5%AE%B6%E7%A7%BB%E5%8A%A8%E6%B6%88%E8%80%97">1.4.4 玩家移动消耗</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">动作</th>
+<th style="text-align:center">消耗HP</th>
+<th style="text-align:center">消耗FUEL</th>
+<th style="text-align:center">消耗FOOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">每经过(7+LV-LEVEL)秒</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">7</td>
+</tr>
+<tr>
+<td style="text-align:center">键盘控制向一个方向移动</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">每2秒-1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">鼠标控制向一个方向移动</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">每1.2秒-1</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">被敌人撞到</td>
+<td style="text-align:center">见1.5.2敌人攻击力表</td>
+<td style="text-align:center">敌人等级*2</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<h4 data-line="NaN" class="code-line code-line code-line" id="145-%E7%8E%A9%E5%AE%B6%E8%BF%9E%E6%9D%80%E5%A5%96%E5%8A%B1%E8%A1%A8">1.4.5 玩家连杀奖励表</h4>
+<p data-line="NaN" class="code-line code-line code-line">连杀分两种：(1)每个12秒周期内杀敌人数和(2)不掉血时间内杀敌人数，两类奖励叠加；</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">12秒周期内连杀数量</th>
+<th style="text-align:center">奖励</th>
+<th style="text-align:center">不掉血连杀数量</th>
+<th style="text-align:center">奖励</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">HP+20 &amp; FOOD+20</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">FUEL+30 &amp; FOOD+20</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">HP+30 &amp; SHELL0+ 50</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">SHELL0+50 &amp; HP+30</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">HP+100</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">FOOD+150</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">SHELL1+100</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">SHELL3+40</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">HP+300</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">SHELL2+90</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">FUEL+700</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">SHELL0+700</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">SHELL3+50</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">SHELL1+200</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">SHELL2+100</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">HP+200</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">SHELL1+300</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">FUEL+1000</td>
+</tr>
+<tr>
+<td style="text-align:center">10+</td>
+<td style="text-align:center">SHELL3+100 &amp; SHELL0+100 &amp; HP+100</td>
+<td style="text-align:center">10+</td>
+<td style="text-align:center">SHELL3+100 &amp; SHELL2+150 &amp; SHELL1+200</td>
+</tr>
+</tbody>
+</table>
+<h3 data-line="NaN" class="code-line code-line code-line" id="15-%E6%95%8C%E4%BA%BA%E5%B1%9E%E6%80%A7">1.5 敌人属性</h3>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">本关卡所有敌人每经过(600 - LEVEL * 10)秒刷新重生一次；</li>
+<li data-line="NaN" class="code-line code-line code-line">生命值表</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">关卡\等级</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+<th style="text-align:center">7</th>
+<th style="text-align:center">8</th>
+<th style="text-align:center">9</th>
+<th style="text-align:center">10</th>
+<th style="text-align:center">11</th>
+<th style="text-align:center">12</th>
+<th style="text-align:center">13</th>
+<th style="text-align:center">14</th>
+<th style="text-align:center">15</th>
+<th style="text-align:center">16</th>
+<th style="text-align:center">17</th>
+<th style="text-align:center">18</th>
+<th style="text-align:center">19</th>
+<th style="text-align:center">20</th>
+<th style="text-align:center">21</th>
+<th style="text-align:center">22</th>
+<th style="text-align:center">23</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">33</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">52</td>
+<td style="text-align:center">55</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">70</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">44</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">60</td>
+<td style="text-align:center">66</td>
+<td style="text-align:center">69</td>
+<td style="text-align:center">70</td>
+<td style="text-align:center">80</td>
+<td style="text-align:center">128</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">56</td>
+<td style="text-align:center">59</td>
+<td style="text-align:center">62</td>
+<td style="text-align:center">56</td>
+<td style="text-align:center">70</td>
+<td style="text-align:center">78</td>
+<td style="text-align:center">77</td>
+<td style="text-align:center">88</td>
+<td style="text-align:center">90</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">270</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">52</td>
+<td style="text-align:center">60</td>
+<td style="text-align:center">64</td>
+<td style="text-align:center">77</td>
+<td style="text-align:center">72</td>
+<td style="text-align:center">80</td>
+<td style="text-align:center">88</td>
+<td style="text-align:center">82</td>
+<td style="text-align:center">96</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">400</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">34</td>
+<td style="text-align:center">48</td>
+<td style="text-align:center">54</td>
+<td style="text-align:center">64</td>
+<td style="text-align:center">66</td>
+<td style="text-align:center">76</td>
+<td style="text-align:center">82</td>
+<td style="text-align:center">90</td>
+<td style="text-align:center">92</td>
+<td style="text-align:center">95</td>
+<td style="text-align:center">144</td>
+<td style="text-align:center">110</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">420</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">60</td>
+<td style="text-align:center">66</td>
+<td style="text-align:center">70</td>
+<td style="text-align:center">80</td>
+<td style="text-align:center">88</td>
+<td style="text-align:center">92</td>
+<td style="text-align:center">96</td>
+<td style="text-align:center">99</td>
+<td style="text-align:center">165</td>
+<td style="text-align:center">120</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">420</td>
+<td style="text-align:center">500</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">52</td>
+<td style="text-align:center">60</td>
+<td style="text-align:center">66</td>
+<td style="text-align:center">70</td>
+<td style="text-align:center">80</td>
+<td style="text-align:center">88</td>
+<td style="text-align:center">92</td>
+<td style="text-align:center">96</td>
+<td style="text-align:center">99</td>
+<td style="text-align:center">196</td>
+<td style="text-align:center">120</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">400</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">480</td>
+<td style="text-align:center">521</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">34</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">52</td>
+<td style="text-align:center">62</td>
+<td style="text-align:center">64</td>
+<td style="text-align:center">72</td>
+<td style="text-align:center">84</td>
+<td style="text-align:center">88</td>
+<td style="text-align:center">96</td>
+<td style="text-align:center">98</td>
+<td style="text-align:center">102</td>
+<td style="text-align:center">250</td>
+<td style="text-align:center">128</td>
+<td style="text-align:center">232</td>
+<td style="text-align:center">344</td>
+<td style="text-align:center">456</td>
+<td style="text-align:center">512</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">660</td>
+<td style="text-align:center">1080</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li data-line="NaN" class="code-line code-line code-line">攻击力表</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">关卡\等级</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+<th style="text-align:center">7</th>
+<th style="text-align:center">8</th>
+<th style="text-align:center">9</th>
+<th style="text-align:center">10</th>
+<th style="text-align:center">11</th>
+<th style="text-align:center">12</th>
+<th style="text-align:center">13</th>
+<th style="text-align:center">14</th>
+<th style="text-align:center">15</th>
+<th style="text-align:center">16</th>
+<th style="text-align:center">17</th>
+<th style="text-align:center">18</th>
+<th style="text-align:center">19</th>
+<th style="text-align:center">20</th>
+<th style="text-align:center">21</th>
+<th style="text-align:center">22</th>
+<th style="text-align:center">23</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">60</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">9</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">27</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">34</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">31</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">88</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">21</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">33</td>
+<td style="text-align:center">35</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">100</td>
+<td style="text-align:center">120</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">35</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">48</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">72</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">144</td>
+<td style="text-align:center">199</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">33</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">44</td>
+<td style="text-align:center">47</td>
+<td style="text-align:center">49</td>
+<td style="text-align:center">60</td>
+<td style="text-align:center">89</td>
+<td style="text-align:center">99</td>
+<td style="text-align:center">108</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">220</td>
+<td style="text-align:center">420</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li data-line="NaN" class="code-line code-line code-line">被打死后给玩家EXP增益表</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">关卡\等级</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+<th style="text-align:center">4</th>
+<th style="text-align:center">5</th>
+<th style="text-align:center">6</th>
+<th style="text-align:center">7</th>
+<th style="text-align:center">8</th>
+<th style="text-align:center">9</th>
+<th style="text-align:center">10</th>
+<th style="text-align:center">11</th>
+<th style="text-align:center">12</th>
+<th style="text-align:center">13</th>
+<th style="text-align:center">14</th>
+<th style="text-align:center">15</th>
+<th style="text-align:center">16</th>
+<th style="text-align:center">17</th>
+<th style="text-align:center">18</th>
+<th style="text-align:center">19</th>
+<th style="text-align:center">20</th>
+<th style="text-align:center">21</th>
+<th style="text-align:center">22</th>
+<th style="text-align:center">23</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">13</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">35</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">128</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">14</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">29</td>
+<td style="text-align:center">33</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">228</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">19</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">23</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">33</td>
+<td style="text-align:center">35</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">44</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">300</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">23</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">29</td>
+<td style="text-align:center">34</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">43</td>
+<td style="text-align:center">44</td>
+<td style="text-align:center">47</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">405</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">33</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">43</td>
+<td style="text-align:center">47</td>
+<td style="text-align:center">48</td>
+<td style="text-align:center">49</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">555</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">22</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">36</td>
+<td style="text-align:center">41</td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">48</td>
+<td style="text-align:center">49</td>
+<td style="text-align:center">52</td>
+<td style="text-align:center">58</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">400</td>
+<td style="text-align:center">666</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">26</td>
+<td style="text-align:center">28</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">34</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">48</td>
+<td style="text-align:center">49</td>
+<td style="text-align:center">52</td>
+<td style="text-align:center">57</td>
+<td style="text-align:center">66</td>
+<td style="text-align:center">72</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">555</td>
+<td style="text-align:center">777</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">32</td>
+<td style="text-align:center">35</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">44</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">55</td>
+<td style="text-align:center">58</td>
+<td style="text-align:center">60</td>
+<td style="text-align:center">66</td>
+<td style="text-align:center">78</td>
+<td style="text-align:center">85</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">888</td>
+<td style="text-align:center">999</td>
+</tr>
+</tbody>
+</table>
+<h3 data-line="NaN" class="code-line code-line code-line" id="16-%E7%82%AE%E5%BC%B9%E5%B1%9E%E6%80%A7">1.6 炮弹属性</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">炮弹级别</th>
+<th style="text-align:center">对敌人伤害</th>
+<th style="text-align:center">撞到敌人一次给玩家增益</th>
+<th style="text-align:center">消亡条件</th>
+<th style="text-align:center">特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">H</td>
+<td style="text-align:center">(LV+1)*2</td>
+<td style="text-align:center">EXP+2</td>
+<td style="text-align:center">碰到敌人或是地图边界</td>
+<td style="text-align:center">无</td>
+</tr>
+<tr>
+<td style="text-align:center">J</td>
+<td style="text-align:center">1~无穷大</td>
+<td style="text-align:center">EXP+1 &amp; FUEL+1</td>
+<td style="text-align:center">碰到地图边界</td>
+<td style="text-align:center">对敌人瞬间进行穿透式N次伤害(N&gt;=5)，伤害值巨大</td>
+</tr>
+<tr>
+<td style="text-align:center">K</td>
+<td style="text-align:center">(LV+1)*5</td>
+<td style="text-align:center">EXP+(敌人等级+1)*2</td>
+<td style="text-align:center">撞击敌人(24+(LV+1)*2)次以上</td>
+<td style="text-align:center">对敌人至少造成26次真实伤害</td>
+</tr>
+<tr>
+<td style="text-align:center">L</td>
+<td style="text-align:center">左右侧撞击：((LV+1)*5)；上下侧撞击：((LV+1)*7)</td>
+<td style="text-align:center">左右侧撞击EXP+((被撞敌人等级+1)*2)；上下侧撞击EXP+((被撞敌人等级+1)*3)</td>
+<td style="text-align:center">碰到地图边界</td>
+<td style="text-align:center">每0.2秒膨胀1.1倍，直到膨胀到原来的7倍后恢复原大小，膨胀10个周期不消亡会自产出另一个L级炮弹</td>
+</tr>
+<tr>
+<td style="text-align:center">O</td>
+<td style="text-align:center">(LV+1)*2</td>
+<td style="text-align:center">EXP+2</td>
+<td style="text-align:center">碰到敌人或是地图边界</td>
+<td style="text-align:center">一组连发</td>
+</tr>
+</tbody>
+</table>
+<h3 data-line="NaN" class="code-line code-line code-line" id="17-%E5%A5%96%E5%8A%B1%E5%92%8C%E5%85%B6%E4%BB%96%E6%98%9F%E7%B3%BB%E7%89%A9%E8%B4%A8%E5%B1%9E%E6%80%A7">1.7 奖励和其他星系物质属性</h3>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">撞到玩家后产生效果</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">物质</th>
+<th style="text-align:center">HP</th>
+<th style="text-align:center">FOOD</th>
+<th style="text-align:center">FUEL</th>
+<th style="text-align:center">EXP</th>
+<th style="text-align:center">SHELL0~3</th>
+<th style="text-align:center">特性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">黄色星星</td>
+<td style="text-align:center">22*(LEVEL+1)</td>
+<td style="text-align:center">22*(LEVEL+1)</td>
+<td style="text-align:center">22*(LEVEL+1)</td>
+<td style="text-align:center">11*(LEVEL+1)</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">碰一下就被吃掉</td>
+</tr>
+<tr>
+<td style="text-align:center">扁平黑洞</td>
+<td style="text-align:center">40*(LEVEL+1)</td>
+<td style="text-align:center">50*(LEVEL+1)</td>
+<td style="text-align:center">100*(LEVEL+1)</td>
+<td style="text-align:center">66*(LEVEL+1)</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">只有通关时才会增益</td>
+</tr>
+<tr>
+<td style="text-align:center">绿色星星</td>
+<td style="text-align:center">2*N</td>
+<td style="text-align:center">2*N</td>
+<td style="text-align:center">3*N</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">碰一下后持续存在</td>
+</tr>
+<tr>
+<td style="text-align:center">蓝色星星</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">随机，分别是1~100;1~30;1~20;1~10</td>
+<td style="text-align:center">碰一下后持续存在</td>
+</tr>
+<tr>
+<td style="text-align:center">粉色星星</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">霸体无敌状态3秒</td>
+</tr>
+<tr>
+<td style="text-align:center">黑洞</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">-3*(6~8)*N</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">玩家会被吸引，且越靠近中心越被吸引</td>
+</tr>
+<tr>
+<td style="text-align:center">星体</td>
+<td style="text-align:center">-1*N</td>
+<td style="text-align:center">-3*N</td>
+<td style="text-align:center">-1*N</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">星体不动</td>
+</tr>
+<tr>
+<td style="text-align:center">尘埃</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">进入尘埃，玩家看不到飞船</td>
+</tr>
+<tr>
+<td style="text-align:center">星云</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">-1*N</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">飞船被减速，且越靠近中心越被减速</td>
+</tr>
+<tr>
+<td style="text-align:center">陨石</td>
+<td style="text-align:center">-1*N</td>
+<td style="text-align:center">-1*N</td>
+<td style="text-align:center">-1*N</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">玩家可能会瞬间被击穿</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li data-line="NaN" class="code-line code-line code-line">物质速度</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:center">0</th>
+<th style="text-align:center">1</th>
+<th style="text-align:center">2</th>
+<th style="text-align:center">3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0+</td>
+<td style="text-align:center">glm::vec2(-20.0f, 10.0f)</td>
+<td style="text-align:center">glm::vec2(30.0f, -10.0f)</td>
+<td style="text-align:center">glm::vec2(20.0f, 10.0f)</td>
+<td style="text-align:center">glm::vec2(-10.0f, -20.0f)</td>
+</tr>
+<tr>
+<td style="text-align:center">4+</td>
+<td style="text-align:center">glm::vec2(20.0f, -20.0f)</td>
+<td style="text-align:center">glm::vec2(100.0f, 100.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+</tr>
+<tr>
+<td style="text-align:center">8+</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f,0.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+</tr>
+<tr>
+<td style="text-align:center">12+</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+</tr>
+<tr>
+<td style="text-align:center">16+</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+<td style="text-align:center">glm::vec2(0.0f, 0.0f)</td>
+<td style="text-align:center">glm::vec2(100.0f, 100.0f)</td>
+<td style="text-align:center">glm::vec2(200.0f, 200.0f)</td>
+</tr>
+<tr>
+<td style="text-align:center">20+</td>
+<td style="text-align:center">glm::vec2(100.0f, 100.0f)</td>
+<td style="text-align:center">glm::vec2(40.0f, 40.0f)</td>
+<td style="text-align:center">glm::vec2(30.0f, -30.0f)</td>
+<td style="text-align:center">glm::vec2(-30.0f, 35.0f)</td>
+</tr>
+</tbody>
+</table>
+<h2 data-line="NaN" class="code-line code-line code-line" id="%E4%BA%8C%E7%8E%A9%E6%B3%95%E6%94%BB%E7%95%A5">二、玩法攻略</h2>
+<ol>
+<li data-line="NaN" class="code-line code-line code-line">在不经常变换方向的前提下，键盘+Q控制飞船移动，性价比更高；否则鼠标右键更好一些；</li>
+<li data-line="NaN" class="code-line code-line code-line">刚开始第一关不要跳关，不要急着通关，先吃一波BUFF，再拿连杀，因为连杀奖励高，最后等敌人刷新复活后再杀几波，养肥了自己再过关也不迟；</li>
+<li data-line="NaN" class="code-line code-line code-line">当敌人排成一排，用几波J级炮弹可以一通杀，顺便拿双倍连杀；</li>
+<li data-line="NaN" class="code-line code-line code-line">(更多攻略传奇和优秀走位，等你来书写)</li>
+</ol>
+
+</body></html>

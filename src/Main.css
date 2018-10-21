@@ -1,0 +1,52 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  /* height: 160px; */
+  line-height: 160px;
+  /* padding: -2px; */
+  margin-top: -2px;
+  /* margin-bottom: 2px; */
+  margin-left: -1px;
+  margin-right: -1px;
+  background: #000000;
+  overflow: hidden;
+}
+/* .ant-carousel .slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+} */
+.ant-carousel .slick-slider .slick-track,
+.ant-carousel .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.ant-carousel .slick-track {
+  background: #222222;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.ant-carousel .slick-track:before,
+.ant-carousel .slick-track:after {
+  content: "";
+  display: table;
+}
+.ant-carousel .slick-track:after {
+  clear: both;
+}
+.slick-loading .ant-carousel .slick-track {
+  visibility: hidden;
+}
+#components-layout-demo-top .logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255,255,255,.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+  }
